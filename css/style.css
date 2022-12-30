@@ -37,16 +37,6 @@ main {
     color: #FFFFFF;
 }
 
-.banner-img {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    opacity: 0.2;
-    background-image: url(images/logo-banner-img.svg);
-}
-
 .login-form {
     position: absolute;
     left: 50%;
@@ -63,6 +53,25 @@ main {
     border-radius: 4px;
     width: 450px !important;
     height: 515px;
+}
+
+.login-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
+.login-desc {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #6F6F6F;
 }
 
 .login-heading {
@@ -275,6 +284,24 @@ main {
     height: 60px;
     background: #FFFFFF;
     border-bottom: 1px solid #ECEAED;
+}
+
+.profile-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.profile-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
 }
 
 .banner-actions {
@@ -697,7 +724,7 @@ main {
 
 @media screen and (max-width: 500px) {
     .powered-by {
-        padding: 0px;
+        padding: 0px 0px 20px;
     }
 }
 
@@ -721,17 +748,40 @@ main {
     gap: 20px;
 }
 
+@media screen and (max-width: 500px) {
+    .title-and-back {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+    }
+}
+
 .event-box-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px;
     gap: 20px;
-    width: 800px;
-    height: 123px;
+    width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
     border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+    .event-box-header {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .event-title-col-heading {
+        font-size: 20px !important;
+    }
+
+    .event-title-col-p {
+        font-size: 12px !important;
+    }
 }
 
 .event-box-hover:hover {
@@ -1116,6 +1166,16 @@ main {
 
 /* Payments Page */
 
+.payment-btn-fixed-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px 10px 10px;
+    gap: 10px;
+    height: 60px;
+    background: #FFFFFF;
+}
+
 .payment-outstanding-box {
     display: flex;
     flex-direction: column;
@@ -1199,6 +1259,12 @@ main {
     align-items: center;
     padding: 0px;
     gap: 185px;
+}
+
+@media screen and (max-width: 500px) {
+    .invoice-status {
+        gap: 0;
+    }
 }
 
 .invoice-details-col {
@@ -1627,6 +1693,326 @@ main {
     width: 800px;
 }
 
+.notes-table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    border-radius: 4px;
+}
+
+.table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 231px;
+    height: 38px;
+    background: #EDEDED;
+}
+
+.pt-15px {
+    padding-top: 15px;
+}
+
+.th {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
+.tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    gap: 93px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tr-last {
+    border-bottom: none !important;
+}
+
+.tr-bg {
+    background: #FAFAFA;
+}
+
+.show-table:hover {
+    cursor: pointer;
+}
+
+.td-left {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
+.td-right {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #0E74BE;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    background: #FFFFFF;
+}
+
+.article-card-text-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.article-text-header-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+}
+
+.published-by {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+}
+
+@media screen and (max-width: 500px) {
+    .animal-details-banner {
+        width: 100%;
+    }
+
+    .mobile-no-header {
+        display: none;
+    }
+
+    .bg-header-animal-page {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .animal-banner-details-text {
+        gap: 8px !important;
+    }
+
+
+    .animal-col-heading,
+    .clinic-card-heading,
+    .other-event-heading,
+    .invoice-card-amount,
+    .clinical-note-heading,
+    .animal-name-headline,
+    .notification-title,
+    .notification-title-read,
+    .form-button-red,
+    .article-title,
+    .form-desc-heading {
+        font-size: 14px !important;
+    }
+
+    .field-value {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: #202020;
+    }
+
+    .login-text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #202020;
+    }
+
+    .login-desc {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #6F6F6F;
+    }
+
+    .login-form {
+        width: 343px !important;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        right: 30.6%;
+        top: 25.4%;
+        bottom: 7.62%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 40px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        height: 515px;
+    }
+
+    .banner {
+        padding-left: 42px;
+        padding-right: 42px;
+        background-color: #062B4C;
+    }
+
+    .table-header,
+    .tr {
+        gap: 0 !important;
+    }
+
+    .article-box {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .animal-col-desc,
+    .dr-name,
+    .p-detail-text-animal,
+    .invoice-number,
+    .paid-date,
+    .invoice-link,
+    .history-date,
+    .visited-text,
+    .invoice-creation-date,
+    .outstanding-date,
+    .p-detail-text,
+    .notification-desc,
+    .notification-desc-read,
+    .article-desc {
+        font-size: 12px !important;
+    }
+
+    .tag-text,
+    .payment-status-text-overdue,
+    .notification-day,
+    .published-text,
+    .read-time {
+        font-size: 11px !important;
+    }
+
+    .notification-text-col-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .notification-title-row-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 6px;
+    }
+
+    .profile-initial-box {
+        width: 70px;
+        height: 70px;
+    }
+
+    .animal-diagnosis-text,
+    .profile-button-logout,
+    .payment-title-heading,
+    .payment-title-price,
+    .history-title,
+    .tag-title,
+    .invoice-no-text,
+    .category-box-title,
+    .profile-desc,
+    .profile-other-details,
+    .preference-title,
+    .form-label,
+    .td-left {
+        font-size: 13px !important;
+    }
+
+    .td-left {
+        text-align: left;
+    }
+
+    .back-btn-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+    }
+
+    .w-530px {
+        width: 100% !important;
+    }
+
+    .title-and-back-profile {
+        align-items: flex-start !important;
+    }
+
+    .other-text,
+    .payable-amount-text,
+    .payable {
+        font-size: 16px !important;
+    }
+
+    .animal-img-banner-mobile {
+        width: 70px;
+        height: 70px;
+    }
+
+    .w-800px {
+        width: 100% !important;
+        padding: 20px !important;
+    }
+
+    .profile-name,
+    .profile-title {
+        font-size: 20px !important;
+    }
+
+    .banner-heading {
+        font-size: 24px !important;
+    }
+}
+
+.field-value {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
 .animal-banner-details-text {
     display: flex;
     flex-direction: column;
@@ -1663,9 +2049,9 @@ main {
     width: 800px;
 }
 
-.py-30px {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.py-20px {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .events-section {
@@ -1844,4 +2230,219 @@ main {
     line-height: 19px;
     letter-spacing: 0.02em;
     color: #202020;
+}
+
+
+/* Payment Details */
+
+.payment-details {
+    gap: 40px !important;
+}
+
+.payment-details-card {
+    gap: 40px !important;
+    height: auto !important;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
+
+.form-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+}
+
+.payment-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 100%;
+}
+
+.date-and-cvv {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-desc-heading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
+.amount-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    width: 100%;
+}
+
+.payable-amount-text {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
+.payable {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
+.all-invoice-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+}
+
+.pending-invoice {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #6F6F6F;
+}
+
+.payment-amount-paid {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
+
+/* Payment Success Page */
+
+.success-content-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.success-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    padding: 33px;
+}
+
+.payment-successful {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.payment-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+.payment-msg {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
+.payment-msg-desc {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #6F6F6F;
+}
+
+.payment-status-bottom-btn {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
+.payment-status-bottom-btn:hover {
+    cursor: pointer;
+    color: #202020;
+}
+
+
+/* Payment Failed Page */
+
+.payment-btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.success-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
+    border-radius: 4px;
+}
+
+.payment-successful-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
 }

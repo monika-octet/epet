@@ -17,7 +17,7 @@
 
 <body class="bg-theme-light">
     <main>
-        <div class="header">
+        <div class="header mobile-no-header">
             <img class="logo-img img-fluid" src="images/banner-logo.svg" alt="">
             <div class="banner-actions">
                 <a href="notifications.html" class="notifications position-relative">
@@ -42,7 +42,7 @@
                     </a>
                 </div>
                 <div class="animal-details-banner">
-                    <img src="images/animal-page-banner-img.svg" alt="">
+                    <img src="images/animal-page-banner-img.svg" alt="" class="animal-img-banner-mobile">
                     <div class="animal-banner-details-text">
                         <div class="info">
                             <div class="title-and-tag">
@@ -72,21 +72,22 @@
                 </div>
             </div>
 
-            <div class="w-800px mx-auto py-30px">
+            <div class="w-800px mx-auto py-20px">
                 <div class="scrollable-content w-100">
 
                     <div class="events-section w-100">
                         <div class="title-and-search">
                             <h4 class="mb-0 other-text">Upcoming Events</h4>
                         </div>
-    
+
                         <div class="animal-page-card w-100">
                             <div class="event-partition-top w-100">
                                 <img src="images/checkup.svg" alt="" class="img-fluid">
                                 <div class="event-details-section">
                                     <div class="event-title-col">
                                         <h3 class="mb-0 animal-col-heading">Checkup</h3>
-                                        <p class="mb-0 animal-col-desc">On Dec 22, 2022 at 10:30 AM with Dr. William </p>
+                                        <p class="mb-0 animal-col-desc">On Dec 22, 2022 at 10:30 AM with Dr. William
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +96,8 @@
                                 <div class="event-details-section">
                                     <div class="event-title-col">
                                         <h3 class="mb-0 animal-col-heading">Checkup</h3>
-                                        <p class="mb-0 animal-col-desc">On Dec 22, 2022 at 10:30 AM with Dr. William </p>
+                                        <p class="mb-0 animal-col-desc">On Dec 22, 2022 at 10:30 AM with Dr. William
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -106,16 +108,41 @@
                         <div class="title-and-search">
                             <h4 class="mb-0 other-text">Clinical Notes</h4>
                         </div>
-    
+
                         <div class="animal-page-clinical-card w-100">
                             <div class="date-and-time w-100">
                                 <div class="card-dropdown-row w-100">
                                     <h5 class="mb-0 clinic-card-heading">Dec 15, 2022 at 11:30 AM</h5>
-                                    <img src="images/dropdown.svg" alt="">
+                                    <a class="show-table"><img src="images/dropdown.svg" alt=""></a>
                                 </div>
                                 <p class="mb-0 dr-name">Dr Peter</p>
                             </div>
-                            <p class="mb-0 animal-diagnosis-text w-100">Diagnosis - temp is high an has skin rashes </p>
+                            <p class="mb-0 animal-diagnosis-text w-100">Diagnosis - temp is high an has skin
+                                rashes </p>
+                            <div class="notes-table d-none w-100 pt-15px">
+                                <div class="table-header w-100">
+                                    <p class="th mb-0">Item</p>
+                                    <p class="th mb-0">Attachments</p>
+                                </div>
+                                <div class="items w-100">
+                                    <div class="tr w-100">
+                                        <p class="mb-0 td-left">Name Lorem ipsum sir amet</p>
+                                        <a href="#" class="td-right invoice-link text-decoration-none mb-0">Invoice</a>
+                                    </div>
+                                    <div class="tr tr-bg w-100">
+                                        <p class="mb-0 td-left">Name Lorem ipsum sir amet</p>
+                                        <a href="#" class="td-right invoice-link text-decoration-none mb-0">Doc123</a>
+                                    </div>
+                                    <div class="tr w-100">
+                                        <p class="mb-0 td-left">Name Lorem ipsum sir amet<br>Name Lorem ipsum sir amet</p>
+                                        <a href="#" class="td-right invoice-link text-decoration-none mb-0">Doc123</a>
+                                    </div>
+                                    <div class="tr tr-last tr-bg w-100">
+                                        <p class="mb-0 td-left">Name Lorem ipsum sir amet</p>
+                                        <a href="#" class="td-right invoice-link text-decoration-none mb-0">Doc123</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="animal-page-clinical-card w-100">
@@ -150,16 +177,16 @@
                             <h4 class="mb-0 other-text">Payment History</h4>
                             <a href="payment-history.html"><img src="images/right-arrow.svg"></a>
                         </div>
-    
+
                         <div class="animal-page-payment-card w-100">
                             <div class="payment-history-1 w-100">
                                 <div class="payment-title-row w-100">
                                     <h5 class="mb-0 payment-title-heading">Checkup</h5>
                                     <h5 class="mb-0 payment-title-price">£18.15</h5>
                                 </div>
-    
+
                                 <p class="mb-0 invoice-number w-100">Invoice number : 12387</p>
-    
+
                                 <div class="paid-and-invoice w-100">
                                     <p class="mb-0 paid-date">Paid on Dec 21, 2022 via cash</p>
                                     <a href="#" class="invoice-link text-decoration-none mb-0">View Invoice</a>
@@ -171,9 +198,9 @@
                                     <h5 class="mb-0 payment-title-heading">Checkup</h5>
                                     <h5 class="mb-0 payment-title-price">£18.15</h5>
                                 </div>
-    
+
                                 <p class="mb-0 invoice-number w-100">Invoice number : 12387</p>
-    
+
                                 <div class="paid-and-invoice w-100">
                                     <p class="mb-0 paid-date">Paid on Dec 21, 2022 via cash</p>
                                     <a href="#" class="invoice-link text-decoration-none mb-0">View Invoice</a>
@@ -185,9 +212,9 @@
                                     <h5 class="mb-0 payment-title-heading">Checkup</h5>
                                     <h5 class="mb-0 payment-title-price">£18.15</h5>
                                 </div>
-    
+
                                 <p class="mb-0 invoice-number w-100">Invoice number : 12387</p>
-    
+
                                 <div class="paid-and-invoice w-100">
                                     <p class="mb-0 paid-date">Paid on Dec 21, 2022 via cash</p>
                                     <a href="#" class="invoice-link text-decoration-none mb-0">View Invoice</a>
@@ -201,12 +228,12 @@
                             <h4 class="mb-0 other-text">Visit History</h4>
                             <a href="visit-history.html"><img src="images/right-arrow.svg"></a>
                         </div>
-    
+
                         <div class="visit-history-details h-auto w-100">
                             <div class="line-col-small">
                                 <div class="line"></div>
                             </div>
-                           
+
                             <div class="history-details h-auto w-100 flex-fill">
                                 <div class="history-1 w-100">
                                     <span class="mb-0 history-title">Dec 10, 2022 at 10:00 AM</span>
@@ -225,7 +252,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="powered-by">
                         <p class="powered-text mb-0">Powered By</p>
                         <img src="images/powered-logo.svg" alt="" class="img-fluid">
