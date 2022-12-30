@@ -389,6 +389,13 @@ main {
     position: relative;
 }
 
+@media screen and (max-width: 500px) {
+    .category-box {
+        width: 101px;
+        height: 80px;
+    }
+}
+
 .category-box:hover {
     cursor: pointer;
     background: #F9F9F9;
@@ -429,8 +436,16 @@ main {
 
 .main-body {
     padding-top: 70px;
-    width: 840px;
+    /* width: 840px; */
     margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+    .main-body {
+        padding: 70px 20px 20px 20px;
+        /* width: 840px; */
+        margin: 0 auto;
+    }
 }
 
 .scrollable-content {
@@ -489,9 +504,12 @@ main {
     gap: 15px;
 }
 
-.w-840px {
-    width: 840px;
+@media (min-width: 500px) {
+    .w-840px {
+        width: 840px;
+    }
 }
+
 
 .list {
     display: flex;
@@ -499,6 +517,7 @@ main {
     align-items: center;
     padding: 0px;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .pet-details-box {
@@ -650,6 +669,12 @@ main {
     gap: 5px;
 }
 
+@media screen and (max-width: 500px) {
+    .powered-by {
+        padding: 0px;
+    }
+}
+
 .powered-text {
     font-weight: 400;
     font-size: 16px;
@@ -754,6 +779,23 @@ main {
     isolation: isolate;
     height: 180px;
     background: #062B4C;
+}
+
+@media screen and (max-width: 500px) {
+    .bg-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding: 20px 16px; */
+        gap: 20px;
+        /* position: absolute; */
+        /* width: 375px; */
+        height: 140px;
+        left: 0px;
+        top: 0px;
+        background: #062B4C;
+        border-radius: 0px;
+    }
 }
 
 .clinical-details {
