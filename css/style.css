@@ -2,7 +2,7 @@ body {
     position: relative;
     overflow-y: scroll;
     height: 100vh;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
 }
 
 main {
@@ -51,8 +51,9 @@ main {
     gap: 40px;
     background: #FFFFFF;
     border-radius: 4px;
-    width: 450px !important;
-    height: 515px;
+    width: 530px !important;
+    height: 476px;
+    justify-content: space-between !important;
 }
 
 .login-text {
@@ -80,6 +81,15 @@ main {
     align-items: flex-start;
     padding: 0px;
     gap: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    height: 356px;
 }
 
 .form-fields-box {
@@ -182,7 +192,7 @@ main {
     background-image: url(../images/check.svg);
     background-repeat: no-repeat !important;
     background-position: center !important;
-    background-size: contain !important;
+    background-size: 9px 7px !important;
     margin-top: 0 !important;
 }
 
@@ -193,7 +203,7 @@ main {
     background-image: url(../images/check-active.svg) !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    background-size: contain !important;
+    background-size: 9px 7px !important;
 }
 
 .form-check-input:focus {
@@ -214,7 +224,7 @@ main {
     font-size: 13px;
     line-height: 17px;
     letter-spacing: 0.02em;
-    color: #0E74BE;
+    color: #0E74BE !important;
     text-decoration: none;
 }
 
@@ -238,6 +248,7 @@ main {
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .form-button-red:hover {
@@ -375,14 +386,10 @@ main {
     align-items: center;
     padding: 40px 263px;
     gap: 20px;
-    /* position: absolute; */
     width: 100%;
     height: 180px;
-    left: 0px;
-    top: 60px;
     background: #062B4C;
     border-radius: 0px;
-    z-index: 20;
 }
 
 .page-heading {
@@ -445,12 +452,11 @@ main {
 
 .category-box:hover {
     cursor: pointer;
-    background: #F9F9F9;
-    box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.22);
-    border-radius: 4px;
+    background: #F9F9F9 !important;
+    box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.22) !important;
     transition: all;
     transition-duration: 300ms;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
 }
 
 .category-box:active {
@@ -460,6 +466,7 @@ main {
 }
 
 .category-box-title {
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -524,21 +531,38 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 5px 30px !important;
+    padding: 5px 40px !important;
     gap: 10px;
+    font-size: 14px;
     height: 40px;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
     border-radius: 4px;
 }
 
+.search-desktop::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #979797;
+}
+
+.search-desktop:active {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #202020;
+}
+
 .search-icon {
     position: absolute;
-    left: 10px;
+    left: 15px;
     z-index: 10;
     top: 0;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     bottom: 0;
     margin: auto;
 }
@@ -589,6 +613,10 @@ main {
 .pet-details-box:hover {
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.22);
     cursor: pointer;
+    background: #F9F9F9;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
 }
 
 .pet-img-holder {
@@ -720,6 +748,11 @@ main {
     align-items: center;
     padding: 0px 0px 30px;
     gap: 5px;
+    height: 51px;
+}
+
+.mt-30px {
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 500px) {
@@ -748,6 +781,18 @@ main {
     gap: 20px;
 }
 
+.icon-holder-events-1 {
+    width: 22px;
+    height: 72px;
+}
+
+.icon-holder-events-2 {
+    width: 22px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 500px) {
     .title-and-back {
         flex-direction: column;
@@ -765,6 +810,7 @@ main {
     gap: 20px;
     width: 100%;
     background: #FFFFFF;
+    border: 1px solid #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
     border-radius: 4px;
 }
@@ -787,6 +833,23 @@ main {
 .event-box-hover:hover {
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.22);
     cursor: pointer;
+    border: 1px solid #DDDDDD;
+
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.other-events {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+}
+
+.pt-50px {
+    padding-top: 50px;
 }
 
 .back-btn-holder {
@@ -802,6 +865,41 @@ main {
     align-items: flex-start;
     padding: 0px;
     gap: 10px;
+}
+
+.clinical-box-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
+    border-radius: 4px;
+}
+
+.clinical-box-header:hover {
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.22);
+    border-radius: 4px;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.gap-15px {
+    gap: 15px !important;
+}
+
+.clinical-details-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 15px;
+    gap: 8px;
+    height: 62px;
 }
 
 .other-text {
@@ -986,7 +1084,7 @@ main {
     font-size: 13px;
     line-height: 17px;
     letter-spacing: 0.02em;
-    color: #0E74BE;
+    color: #0E74BE !important;
 }
 
 .invoice-link:hover {
@@ -1096,13 +1194,19 @@ main {
     padding: 20px;
     gap: 20px;
     background: #FFFFFF;
+    border: 1px solid #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
     border-radius: 6px;
+
 }
 
 .article-box:hover {
+    border: 1px solid #DDDDDD;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.22);
     cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
 }
 
 .article-card-text {
@@ -1223,6 +1327,11 @@ main {
     color: #FFFFFF;
 }
 
+.payment-btn:active {
+    background: #970716 !important;
+    color: #FFFFFF !important;
+}
+
 .invoice-overdue-card {
     display: flex;
     flex-direction: column;
@@ -1329,6 +1438,7 @@ main {
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
     border-radius: 4px;
+    border: 1px solid #FFFFFF;
 }
 
 .payment-status-paid {
@@ -1352,15 +1462,29 @@ main {
 }
 
 .invoice-paid-card:hover {
+    border: 1px solid #DDDDDD;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.22);
     cursor: pointer;
+
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
 }
 
 .invoice-overdue-card:hover {
     filter: drop-shadow(0px 2px 8px rgba(32, 32, 32, 0.22));
     cursor: pointer;
+
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
 }
 
+
+.icon-lock {
+    width: 16px;
+    height: 16px;
+}
 
 /* Notifications Page */
 
@@ -1371,8 +1495,23 @@ main {
     padding: 20px 20px 20px 12px;
     gap: 12px;
     background: #FFFFFF;
+    border: 1px solid #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
     border-radius: 4px;
+}
+
+.notification-box:hover {
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.22);
+    border-radius: 4px;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.w-676px {
+    width: 676px;
 }
 
 .notification-holder {
@@ -1628,6 +1767,7 @@ main {
 }
 
 .profile-button-logout:hover {
+    box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.22);
     background: #FFFFFF !important;
 }
 
@@ -1684,6 +1824,13 @@ main {
     background: #062B4C;
 }
 
+.icon-holder-animal-page {
+    width: 22px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
 .animal-details-banner {
     display: flex;
     flex-direction: row;
@@ -1691,6 +1838,10 @@ main {
     padding: 0px;
     gap: 20px;
     width: 800px;
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 .notes-table {
@@ -2049,9 +2200,9 @@ main {
     width: 800px;
 }
 
-.py-20px {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.py-30px {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .events-section {
@@ -2124,6 +2275,7 @@ main {
     align-items: center;
     padding: 20px;
     background: #FFFFFF;
+    border: 1px solid #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
     border-radius: 4px;
 }
