@@ -496,9 +496,26 @@ main {
 
 @media screen and (max-width: 500px) {
     .main-body {
-        padding: 70px 20px 20px 20px;
+        padding: 115px 20px 20px 20px;
         /* width: 840px; */
         margin: 0 auto;
+    }
+
+    .other-events {
+        gap: 10px !important;
+    }
+
+    .invoice-overdue-card {
+        filter: drop-shadow(0px 2px 8px rgba(32, 32, 32, 0.22)) !important;
+    }
+
+    .padding-when-btn-fixed {
+        padding-bottom: 90px !important;
+        padding-left: 20px !important;
+    }
+
+    .payment-form {
+        gap: 20px !important;
     }
 }
 
@@ -757,7 +774,11 @@ main {
 
 @media screen and (max-width: 500px) {
     .powered-by {
-        padding: 0px 0px 20px;
+        padding: 0px 20px 20px;
+    }
+
+    .edit-field-col{
+        gap: 8px!important;
     }
 }
 
@@ -964,11 +985,16 @@ main {
         gap: 20px;
         /* position: absolute; */
         /* width: 375px; */
-        height: 140px;
+        height: 156px;
         left: 0px;
         top: 0px;
         background: #062B4C;
         border-radius: 0px;
+    }
+
+    .notification-box {
+        padding: 15px 15px 15px 10px !important;
+        gap: 10px !important;
     }
 }
 
@@ -1968,7 +1994,6 @@ main {
         gap: 8px !important;
     }
 
-
     .animal-col-heading,
     .clinic-card-heading,
     .other-event-heading,
@@ -2026,7 +2051,7 @@ main {
         gap: 40px;
         background: #FFFFFF;
         border-radius: 4px;
-        height: 515px;
+        /* height: 515px; */
     }
 
     .banner {
@@ -2069,8 +2094,13 @@ main {
     .payment-status-text-overdue,
     .notification-day,
     .published-text,
-    .read-time {
+    .read-time,
+    .powered-text {
         font-size: 11px !important;
+    }
+
+    .pt-50px {
+        padding-top: 90px !important;
     }
 
     .notification-text-col-mobile {
@@ -2079,6 +2109,22 @@ main {
         align-items: flex-start;
         padding: 0px;
         gap: 10px;
+    }
+
+    .event-details-section,
+    .payment-history-1,
+    .payment-history-card,
+    .history-1 {
+        gap: 6px !important;
+    }
+
+    .payment-history-1,
+    .history-1 {
+        padding: 0px 0px 15px !important;
+    }
+
+    .history-title::before{
+        left: -30.15px!important;
     }
 
     .notification-title-row-mobile {
@@ -2108,6 +2154,15 @@ main {
     .form-label,
     .td-left {
         font-size: 13px !important;
+    }
+
+    .form-label-mobile {
+        font-size: 13px !important;
+        font-weight: 400 !important;
+    }
+
+    .less-padding-mobile {
+        padding: 50px 20px 20px 20px !important;
     }
 
     .td-left {
@@ -2154,6 +2209,50 @@ main {
     .banner-heading {
         font-size: 24px !important;
     }
+
+    .animal-details,
+    .list,
+    .clinical-details,
+    .events-section {
+        gap: 10px !important;
+    }
+
+    .tr {
+        padding: 10px 15px !important;
+    }
+
+    .date-and-time {
+        gap: 6px !important;
+        padding: 0px 0px 10px !important;
+    }
+
+    .animal-page-card {
+        gap: 15px !important;
+    }
+
+    .event-partition-top {
+        height: 57px !important;
+    }
+
+    .article-box img {
+        width: 88px !important;
+        height: 82px !important;
+    }
+
+    .pet-details-box {
+        padding: 15px !important;
+    }
+}
+
+.other-event-heading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+
+    /* Text Color */
+
+    color: #202020;
 }
 
 .field-value {
