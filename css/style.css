@@ -2254,6 +2254,12 @@ main {
     }
 }
 
+@media screen and (max-width: 390px) {
+    .pt-50px {
+        padding-top: 115px !important;
+    }
+}
+
 .other-event-heading {
     font-weight: 600;
     font-size: 16px;
