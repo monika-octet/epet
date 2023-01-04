@@ -550,27 +550,32 @@ main {
     align-items: center;
     padding: 5px 40px !important;
     gap: 10px;
+    font-weight: 400;
     font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #202020;
     height: 40px;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.1);
     border-radius: 4px;
 }
 
-.search-desktop::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: #979797;
+.search-desktop::-webkit-input-placeholder {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    letter-spacing: 0.02em !important;
+    color: #979797 !important;
 }
 
-.search-desktop:active {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: #202020;
+.search-desktop:active,
+.search-desktop:visited {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    letter-spacing: 0.02em !important;
+    color: #202020 !important;
 }
 
 .search-icon {
@@ -777,8 +782,8 @@ main {
         padding: 0px 20px 20px;
     }
 
-    .edit-field-col{
-        gap: 8px!important;
+    .edit-field-col {
+        gap: 8px !important;
     }
 }
 
@@ -2123,8 +2128,8 @@ main {
         padding: 0px 0px 15px !important;
     }
 
-    .history-title::before{
-        left: -30.15px!important;
+    .history-title::before {
+        left: -30.15px !important;
     }
 
     .notification-title-row-mobile {
@@ -2230,8 +2235,13 @@ main {
         gap: 15px !important;
     }
 
+    .event-partition-bottom {
+        height: auto !important;
+    }
+
     .event-partition-top {
-        height: 57px !important;
+        height: auto !important;
+        padding-bottom: 15px !important;
     }
 
     .article-box img {
@@ -2488,6 +2498,14 @@ main {
 
 .payment-details {
     gap: 40px !important;
+}
+
+.button-red-payment-details {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 .payment-details-card {
