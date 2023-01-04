@@ -781,6 +781,7 @@ main {
 @media screen and (max-width: 500px) {
     .powered-by {
         padding: 0px 20px 20px;
+        margin-top: 0!important;
     }
 
     .edit-field-col {
