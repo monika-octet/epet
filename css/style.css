@@ -408,6 +408,7 @@ main {
     align-items: flex-start;
     padding: 0px;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .category-box {
