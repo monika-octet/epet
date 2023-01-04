@@ -374,6 +374,7 @@ main {
 }
 
 .main-content {
+    /* height: calc(100% - 60px); */
     height: 100%;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -2119,13 +2120,36 @@ main {
     .event-details-section,
     .payment-history-1,
     .payment-history-card,
-    .history-1 {
+    .history-1,
+    .payment-history-2 {
         gap: 6px !important;
     }
 
-    .payment-history-1,
+    .payment-history-1 {
+        padding: 0px 0px 15px !important;
+        height: 75px !important;
+    }
+
+    .payment-history-2{
+        height: 60px !important;
+    }
+
+    .animal-page-payment-card {
+        padding: 15px !important;
+        gap: 15px !important;
+    }
+
+    .h-16px {
+        height: 16px !important;
+    }
+
     .history-1 {
         padding: 0px 0px 15px !important;
+        height: 53px;
+    }
+
+    .line-col-small::after{
+        height: 167px!important;
     }
 
     .history-title::before {
@@ -2167,7 +2191,26 @@ main {
     }
 
     .less-padding-mobile {
-        padding: 50px 20px 20px 20px !important;
+        padding: 70px 20px 20px 20px !important;
+    }
+
+    .profile-button-logout {
+        line-height: 18px;
+        padding: 0px 16px;
+        margin-top: 10px;
+    }
+
+    .animal-page-clinical-card {
+        padding: 0 !important;
+    }
+
+    .p-15px {
+        padding: 15px;
+    }
+
+    .notes-table {
+        padding-top: 0;
+        padding-bottom: 15px;
     }
 
     .td-left {
@@ -2215,10 +2258,15 @@ main {
         font-size: 24px !important;
     }
 
+    .h-54px {
+        height: 54px;
+    }
+
     .animal-details,
     .list,
     .clinical-details,
-    .events-section {
+    .events-section,
+    .title-and-search {
         gap: 10px !important;
     }
 
@@ -2228,10 +2276,17 @@ main {
 
     .date-and-time {
         gap: 6px !important;
-        padding: 0px 0px 10px !important;
     }
 
-    .animal-page-card {
+    .card-dropdown-row {
+        height: 17px;
+    }
+
+    .dr-name {
+        height: 16px;
+    }
+
+    .animal-page-card,.history-details {
         gap: 15px !important;
     }
 
@@ -2251,6 +2306,10 @@ main {
 
     .pet-details-box {
         padding: 15px !important;
+    }
+
+    .h-140px-mobile {
+        height: 140px !important;
     }
 }
 

@@ -7,5 +7,5 @@ $('.pass-eye-img-link').on('click', function(){
 
 $('.show-table').on('click', function(){
     $('.notes-table').toggleClass('d-none');
-    $('.show-table img').toggleClass('rotate');
+    $('.arrow-rotate').toggleClass('rotate');
 })
