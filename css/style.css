@@ -2806,3 +2806,19 @@ main {
     padding: 0px;
     gap: 30px;
 }
+
+.payment-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+}
+
+.vertical-seperator {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #0E74BE;
+}
