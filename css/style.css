@@ -783,7 +783,7 @@ main {
 @media screen and (max-width: 500px) {
     .powered-by {
         padding: 0px 20px 20px;
-        margin-top: 0!important;
+        margin-top: 0 !important;
     }
 
     .edit-field-col {
@@ -1002,7 +1002,7 @@ main {
         border-radius: 0px;
     }
 
-    .height-60px{
+    .height-60px {
         height: calc(100% - 60px);
     }
 
@@ -1413,6 +1413,23 @@ main {
 @media screen and (max-width: 500px) {
     .invoice-status {
         gap: 0;
+    }
+
+    .line-col::after {
+        content: '';
+        position: absolute;
+        height: 500px;
+        width: 1.6px;
+        background-color: #DDDDDD;
+        top: 0px;
+        transform: translateY(-50%);
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    .visit-history-details,
+    .history-details {
+        height: auto;
     }
 }
 
@@ -2138,7 +2155,7 @@ main {
         height: 75px !important;
     }
 
-    .payment-history-2{
+    .payment-history-2 {
         height: 60px !important;
     }
 
@@ -2156,8 +2173,8 @@ main {
         height: 53px;
     }
 
-    .line-col-small::after{
-        height: 167px!important;
+    .line-col-small::after {
+        height: 167px !important;
     }
 
     .history-title::before {
@@ -2294,7 +2311,8 @@ main {
         height: 16px;
     }
 
-    .animal-page-card,.history-details {
+    .animal-page-card,
+    .history-details {
         gap: 15px !important;
     }
 
